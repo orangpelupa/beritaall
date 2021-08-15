@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "beritaall.js" ],
+        "matches":          [   "https://*.detik.com/*",
+                                "https://*.kompas.com/*",
+                                "https://*.grid.id/read/*",
+                                "https://*.tribunnews.com/*",
+                                "https://*.gridoto.com/read/*"
+                            ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "auto halaman all berita Indonesia. CC BY 4.0 mkrss. Saya cuman ngerubah jadi chrome extension",
+    "name":         "Berita Halaman All",
+    "version":      "1",
+"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" }
+}
